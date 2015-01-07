@@ -1,0 +1,128 @@
+body{
+	position: relative;
+}
+div.container-fluid {
+	margin: 0;
+	padding: 0;
+}
+img#twitter_logo {
+	height: 50px;
+	width: 50px;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+header {
+	
+	width: 100%;
+	height: 110px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: fixed;
+	background-color: white;
+	box-shadow: 5px 5px 20px white;
+}
+div.background_image {
+	margin-top: 110px;
+}
+
+header h1, header h4 {
+	text-align: center;
+}
+img#background_image {
+	position: fixed;
+	left: 0px;
+	z-index: -1;
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: auto;
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: auto;
+}
+section h3#post_updates {
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 30px;
+
+}
+input#textarea {
+	width: 70%;
+	height: 50px;
+	/*margin-left: 8%;*/
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: transparent;
+	text-align: center;
+}
+button#post_button { /*use bootstrap to get a design for the button*/
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+
+}
+h3#recent_updates {
+	text-align: center;
+	padding-top: 20px;
+	margin-bottom: 30px;
+}
+section span {
+	border: 1px solid black;
+	width: 70%;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	padding: 10px;
+}
+button#report {
+	margin-right: 15%;
+	margin-left: auto;
+	display: block;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+nav#left_nav { /*the nav has to slide out and be a little darker than the rest of the screen*/
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	line-height: 50px;
+	bottom: 10px;
+}
+ul#left_items {
+	padding-left: 10px;
+	box-shadow: 10px 10px 30px black;
+	width: 150px;
+	color: black;
+	font-weight: bold;
+	display: none;
+}
+ul#left_items a{
+	color: black;
+	text-decoration: none; 
+}
+ul#left_items a:hover{
+	text-transform: uppercase;
+}
+span#glyphicon {
+	font-size: 25px;
+	color: black;
+	cursor: pointer;
+	left: 10px;
+}
+footer p {
+	text-align: center;
+	bottom: 0;
+	font-weight: bold;
+}
+footer {
+	width: 100%;
+	bottom: 0;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	position: fixed;	
+}
