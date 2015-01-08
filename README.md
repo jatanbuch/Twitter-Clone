@@ -11,6 +11,6 @@ The project does make use of the bootstrap for both CSS and Javascipt and jQuery
 
 Should you have any questions, please feel free to reach out...
 
-Thanks
+Live Life & Have Fun!
 
-Jay
+-Jay
