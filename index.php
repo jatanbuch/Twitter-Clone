@@ -19,14 +19,11 @@ $result = $mysqli->query("SELECT * FROM twitter_clone WHERE 1 ORDER BY created D
 </head>
 <div class="container-fluid">
 <body>
-		<!--HEADER GOES HERE-->
     <header>
       <img src="images/twitter_logo.png" id="twitter_logo" class="img-responsive">
       <h1>Twitter</h1>
       <h4>Lets Connect</h4>
     </header>
-
-    <!--SECTION GOES HERE-->
   <div class="background_image">
       <img src="images/twitterbackground2.jpg" class="img-responsive" id="background_image"><!--position: absolute-->
   
@@ -37,19 +34,14 @@ $result = $mysqli->query("SELECT * FROM twitter_clone WHERE 1 ORDER BY created D
       	<button id="post_button" class="btn btn-primary btn-lg">Post</button>
       </form>
       <h3 id="recent_updates">Recent Updates</h3>
-
-
-
+      
 <?php while ($row = $result->fetch_assoc()) : ?>
       <span><?php echo $row["post_enter"];?></span>
       <button id="report" class="btn btn-danger">Report</button>
 <?php endwhile;?>
     </section>
-
-    <!--RIGHT NAV GOES HERE-->
     <article>
-      <nav id="left_nav">
-        
+      <nav id="left_nav">      
         <ul id="left_items" class="nav nav-pills nav-stacked">
           <a href=""><li>Home</li></a>
           <a href=""><li>Notifications</li></a>
@@ -58,22 +50,14 @@ $result = $mysqli->query("SELECT * FROM twitter_clone WHERE 1 ORDER BY created D
         </ul>
         <span class="glyphicon glyphicon-align-justify" aria-hidden="true" id="glyphicon"></span>  
       </nav>
-
-    </article>
-    
-
-    <!--FOOTER GOES HERE-->
+    </article>    
     <footer><!--make footer fixed position at the bottom-->
       <p>&copy; <?php echo date("Y");?>  Copyright Twitter, Inc. All rights reserved.</p>  
     </footer>
-   
 </div>
-
-
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
 <script type="text/javascript" src="js/twitter.js"></script>
-
 </body>
 </div>
 </html>
